@@ -154,3 +154,11 @@ def team_colors (team_name)
     end
   end
 end
+
+def team_names
+  team_names_array = []
+  game_hash.each do |key, value|
+    team_names_array << value[:team_name]
+  end
+  team_names_array
+end
